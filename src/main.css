@@ -8,26 +8,66 @@ html, body {
     margin: 0;
 }
 
-header {
-    background: grey;
-}
-
-footer {
-    background: grey;
-    flex: 0 0 auto;
-}
-
 img {
     max-width: 100%;
+    max-height: 100%;
 }
 
 .app-wrapper {
     display: flex;
     height: 100%;
     flex-direction: column;
+    padding: 0 !important;
 }
 
 .robot-item {
     height: 300px;
+    max-width: 300px;
     flex: 1;
+    border: 1px solid black;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-top: 20px;
+    color: #fff;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+
+.robot-item:hover {
+    box-shadow: 10px;
+    transform: scale(1.05, 1.05);
+}
+
+.robot-item:hover .robot-item-button {
+    bottom: 0;
+}
+
+.robot-item-button {
+    padding: 14px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #EB6864;
+    color: #fff;
+    outline: none;
+    position: absolute;
+    bottom: -52px;
+    transition: 0.2s ease;
+    margin-left: 83px;
+    border: none !important;
+}
+
+header {
+    background-color: #EB6864;
+    padding: 20px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer {
+    border-top: 5px solid #C2185B;
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
 }

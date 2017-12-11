@@ -3,10 +3,31 @@
     padding: 0; 
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 header {
     background: grey;
 }
 
 footer {
     background: grey;
+    flex: 0 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.app-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.robot-item {
+    height: 300px;
+    flex: 1;
 }

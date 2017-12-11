@@ -12,6 +12,7 @@ import {Provider} from 'react-redux'
 import reducers from 'reducers'
 import Layout from 'containers/layout'
 import Robots from 'containers/robots'
+import Robot from 'containers/robot'
 
 const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
@@ -25,6 +26,7 @@ ReactDOM.render(
             <Route component={Layout}>
                 <Route path='/' component={Robots} />
             </Route>
+            <Route path='robots/:id' component={Robot} />
         </Router>
     </Provider>,
     document.getElementById('root')

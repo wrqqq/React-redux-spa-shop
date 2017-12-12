@@ -13,6 +13,7 @@ import reducers from 'reducers'
 import Layout from 'containers/layout'
 import Robots from 'containers/robots'
 import Robot from 'containers/robot'
+import Admin from 'containers/admin'
 
 const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
@@ -25,8 +26,9 @@ ReactDOM.render(
         <Router history={history}>
             <Route component={Layout}>
                 <Route path='/' component={Robots} />
+                <Route path='robots/:id' component={Robot} />
+                <Route path='admin' component={Admin} />
             </Route>
-            <Route path='robots/:id' component={Robot} />
         </Router>
     </Provider>,
     document.getElementById('root')

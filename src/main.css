@@ -4,7 +4,7 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     position: relative;
     font-family: 'Open Sans', sans-serif;
@@ -19,7 +19,12 @@ img {
     display: flex;
     height: 100%;
     flex-direction: column;
+    justify-content: space-between;
     padding: 0 !important;
+}
+
+.container {
+    min-height: calc(80vh - 25px);
 }
 
 .robot-item {
@@ -66,6 +71,16 @@ img {
     border: none !important;
 }
 
+.single-price {
+    padding: 10px 22px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #EB6864;
+    color: #fff;
+}
+
 .robot-item-name {
     color: #000;
     font-weight: bold;
@@ -78,11 +93,12 @@ img {
 }
 
 .back {
-    color: #fff;
+    color: #000;
+    margin-left: 20px;
 }
 
 .back:hover {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -90,6 +106,7 @@ img {
     margin-top: 20px;
     max-height: 500px;
     max-width: 500px;
+    width: 100%;
 }
 
 header {
@@ -110,4 +127,32 @@ footer {
     margin-top: 20px;
     padding: 20px 0;
     text-align: center;
+
+}
+
+.admin {
+    float: right;
+    margin-right: 60px;
+    color: #fff;
+}
+
+.admin-list {
+    list-style-type: none;
+}
+
+.admin-item {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    padding-left: 60px;
+    transition: 0.2s ease;
+}
+
+.admin-item:hover {
+    background-color: #eee;
+}
+
+.admin:hover {
+    color: #fff;
+    text-decoration: none;
 }

@@ -26,9 +26,21 @@ img {
 .container {
     min-height: calc(80vh - 25px);
 }
+.site {
+    float: left;
+    margin-left: 60px;
+    color: #fff;
+    font-size: 21px;
+}
+.site:hover,
+.site:visited,
+.site:link {
+    color: #fff;
+    text-decoration: none;
+}
 
 .robot-item {
-    height: 300px;
+    height: 275px;
     max-width: 300px;
     border: 1px solid black;
     overflow: hidden;
@@ -38,6 +50,7 @@ img {
     color: #fff;
     position: relative;
     transition: 0.4s ease;
+    border-radius: 2px;
 }
 
 @media (max-width: 768px) {
@@ -118,7 +131,7 @@ header {
 }
 
 .description {
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 100%;
 }
 
@@ -134,6 +147,7 @@ footer {
     float: right;
     margin-right: 60px;
     color: #fff;
+    margin-top: 4px;
 }
 
 .admin-list {
@@ -155,4 +169,8 @@ footer {
 .admin:hover {
     color: #fff;
     text-decoration: none;
+}
+
+.robotName {
+    margin-top: 20px;
 }
